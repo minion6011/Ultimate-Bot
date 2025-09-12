@@ -1,0 +1,11 @@
+git+https://github.com/Rapptz/discord.py.git
+discord-together~=1.2.2
+psutil
+requests
+aiohttp
+PyNaCl
+datetime
+deep_translator
+pytubefix
+discord.py[voice]
+pillow
