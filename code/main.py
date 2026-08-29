@@ -2802,10 +2802,10 @@ async def play(interaction: discord.Interaction, name: str):
 				else:
 					print(e)
 					error_embed = discord.Embed(title="***An error occurred while playing the video***", color=discord.Colour.red())
-					embed.add_field(name="Please report the bug using:", value=f"</reportbug:{slash_reportbug_id}>", inline=True)
+					error_embed.add_field(name="Please report the bug using:", value=f"</reportbug:{slash_reportbug_id}>", inline=True)
 					await interaction.edit_original_response(embed=error_embed)
 					#err - channel
-					channel = client.get_channel(system_config["id_error_channel"])
+					channel = client.get_channel(errorchannel)
 					await channel.send(f"**[Errore]** \naudio isinstance: (discord.py) ```{e}```\n url: {url}")
 
 
