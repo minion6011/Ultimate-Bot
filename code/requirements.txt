@@ -9,3 +9,4 @@ deep_translator
 pytubefix
 discord.py[voice]
 pillow
+davey
