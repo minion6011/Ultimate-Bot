@@ -97,7 +97,9 @@ slash_giveaway_id = "0"
 
 class PersistentViewBot(commands.Bot): 
 	def __init__(self):
-		intents = discord.Intents.all()
+		intents = discord.Intents.default()
+		intents.members = True
+		intents.message_content = True
 
 		super().__init__(command_prefix=prefix, intents=intents, case_insensitive=True)
 	async def setup_hook(self) -> None:
